@@ -12,7 +12,7 @@ import {
 import { clusterApiUrl } from '@solana/web3.js';
 import { CONFIG } from '@/utils/constants';
 
-// Import wallet adapter CSS
+//i imported wallet adapter
 import '@solana/wallet-adapter-react-ui/styles.css';
 
 interface Props {
@@ -20,7 +20,7 @@ interface Props {
 }
 
 export const AppWalletProvider: FC<Props> = ({ children }) => {
-    // Determine network from environment
+    // Determine the  network from environment of what we are doing
     const network = useMemo(() => {
         const envNetwork = process.env.NEXT_PUBLIC_SOLANA_NETWORK;
         switch (envNetwork) {
